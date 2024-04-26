@@ -157,8 +157,9 @@ namespace WinForms_Anket
 
             listBox1.SelectedIndex = 0;
             isChangeBtn_Clicked = true;
-            listBox1.DataSource = null;
+            listBox1.DataSource = new List<string>();
             listBox1.DataSource = persons;
+            listBox1.Refresh();
 
         }
     }
